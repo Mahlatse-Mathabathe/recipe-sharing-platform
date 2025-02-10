@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Sharing Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🍽️Recipe Haven✨</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#submit-recipe">Submit Recipe</a></li>
+          <li><a href="#recipes">Recipes</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <h2>Welcome to Recipe Haven</h2>
+      <p>
+        Explore a world of flavors and share your favorite recipes with food
+        lovers everywhere. From comforting classics to exciting new dishes,
+        there’s something for everyone! 🍽️✨
+      </p>
+
+      <div class="image-gallery">
+        <img src="./Food/Old Fashioned Pancakes.jpg" alt="Pancakes Image 1" />
+        <img
+          src="./Food/Chicken Alfredo _ Un Plat Crémeux et Savoureux.jpg"
+          alt="Alfredo Image 2"
+        />
+        <img src="./Food/Pizza.jpg" alt="Pizza Image 3" />
+        <img src="./Food/Ice cream.jpg" alt="Icecream Image 4" />
+      </div>
+    </section>
+
+    <section id="submit-recipe">
+      <h2>Submit Your Recipe</h2>
+      <form id="recipe-form">
+        <label for="recipe-name">Recipe Name:</label>
+        <input
+          type="text"
+          id="recipe-name"
+          name="recipe-name"
+          placeholder="Enter recipe name"
+          required
+        />
+
+        <label for="ingredients">Ingredients:</label>
+        <textarea
+          id="ingredients"
+          name="ingredients"
+          placeholder="List ingredients (separate by commas)"
+          required
+        ></textarea>
+
+        <label for="instructions">Instructions:</label>
+        <textarea
+          id="instructions"
+          name="instructions"
+          placeholder="Provide step-by-step instructions"
+          required
+        ></textarea>
+
+        <label for="image-url">Image URL:</label>
+        <input
+          type="text"
+          id="image-url"
+          name="image-url"
+          placeholder="Paste image URL"
+          required
+        />
+
+        <button type="submit">Submit Recipe</button>
+      </form>
+    </section>
+
+    <section id="recipes">
+      <h2>Recipes</h2>
+      <div id="recipe-list"></div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2025
+        Made with ❤️ by Mahlatse Mathabathe!
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
